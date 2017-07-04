@@ -1,0 +1,9 @@
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\bin\Debug\StockManagement.exe.config
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\bin\Debug\StockManagement.exe
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\bin\Debug\StockManagement.pdb
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\obj\Debug\StockManagement.csprojResolveAssemblyReference.cache
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\obj\Debug\StockManagement.Form1.resources
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\obj\Debug\StockManagement.Properties.Resources.resources
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\obj\Debug\StockManagement.csproj.GenerateResource.Cache
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\obj\Debug\StockManagement.exe
+c:\users\kirans\documents\visual studio 2017\Projects\StockManagement\StockManagement\obj\Debug\StockManagement.pdb
