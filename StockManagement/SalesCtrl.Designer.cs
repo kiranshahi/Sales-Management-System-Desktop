@@ -33,6 +33,8 @@
             this.itemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serialNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +47,10 @@
             this.lblDiscount = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnGenerateBill = new System.Windows.Forms.Button();
+            this.lblColor = new System.Windows.Forms.Label();
+            this.cbColor = new System.Windows.Forms.ComboBox();
+            this.lblSize = new System.Windows.Forms.Label();
+            this.cbSize = new System.Windows.Forms.ComboBox();
             this.salesListPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgSalesItemList)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +75,8 @@
             this.itemID,
             this.serialNo,
             this.itemName,
+            this.itemColor,
+            this.itemSize,
             this.itemPrice,
             this.itemQuantity,
             this.itemTotal,
@@ -91,6 +99,7 @@
             // 
             // serialNo
             // 
+            this.serialNo.FillWeight = 25F;
             this.serialNo.HeaderText = "SN";
             this.serialNo.Name = "serialNo";
             // 
@@ -98,6 +107,16 @@
             // 
             this.itemName.HeaderText = "Item Name";
             this.itemName.Name = "itemName";
+            // 
+            // itemColor
+            // 
+            this.itemColor.HeaderText = "Color";
+            this.itemColor.Name = "itemColor";
+            // 
+            // itemSize
+            // 
+            this.itemSize.HeaderText = "Size";
+            this.itemSize.Name = "itemSize";
             // 
             // itemPrice
             // 
@@ -128,6 +147,7 @@
             this.cbItem.Name = "cbItem";
             this.cbItem.Size = new System.Drawing.Size(300, 28);
             this.cbItem.TabIndex = 0;
+            this.cbItem.SelectedIndexChanged += new System.EventHandler(this.cbItem_SelectedIndexChanged);
             // 
             // lblItem
             // 
@@ -202,9 +222,54 @@
             this.btnGenerateBill.Text = "Generate Bill";
             this.btnGenerateBill.UseVisualStyleBackColor = false;
             // 
+            // lblColor
+            // 
+            this.lblColor.AutoSize = true;
+            this.lblColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.lblColor.Location = new System.Drawing.Point(350, 15);
+            this.lblColor.Name = "lblColor";
+            this.lblColor.Size = new System.Drawing.Size(46, 20);
+            this.lblColor.TabIndex = 9;
+            this.lblColor.Text = "Color";
+            // 
+            // cbColor
+            // 
+            this.cbColor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbColor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbColor.FormattingEnabled = true;
+            this.cbColor.Location = new System.Drawing.Point(350, 45);
+            this.cbColor.Name = "cbColor";
+            this.cbColor.Size = new System.Drawing.Size(300, 28);
+            this.cbColor.TabIndex = 10;
+            this.cbColor.SelectedIndexChanged += new System.EventHandler(this.cbColor_SelectedIndexChanged);
+            // 
+            // lblSize
+            // 
+            this.lblSize.AutoSize = true;
+            this.lblSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.lblSize.Location = new System.Drawing.Point(350, 80);
+            this.lblSize.Name = "lblSize";
+            this.lblSize.Size = new System.Drawing.Size(40, 20);
+            this.lblSize.TabIndex = 11;
+            this.lblSize.Text = "Size";
+            // 
+            // cbSize
+            // 
+            this.cbSize.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbSize.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbSize.FormattingEnabled = true;
+            this.cbSize.Location = new System.Drawing.Point(350, 110);
+            this.cbSize.Name = "cbSize";
+            this.cbSize.Size = new System.Drawing.Size(300, 28);
+            this.cbSize.TabIndex = 10;
+            // 
             // SalesCtrl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.lblSize);
+            this.Controls.Add(this.cbSize);
+            this.Controls.Add(this.cbColor);
+            this.Controls.Add(this.lblColor);
             this.Controls.Add(this.btnGenerateBill);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtDiscount);
@@ -235,13 +300,19 @@
         private System.Windows.Forms.Label lblDiscount;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgSalesItemList;
+        private System.Windows.Forms.Button btnGenerateBill;
+        private System.Windows.Forms.Label lblColor;
+        private System.Windows.Forms.ComboBox cbColor;
+        private System.Windows.Forms.Label lblSize;
+        private System.Windows.Forms.ComboBox cbSize;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemID;
         private System.Windows.Forms.DataGridViewTextBoxColumn serialNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemColor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemSize;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemDiscount;
-        private System.Windows.Forms.Button btnGenerateBill;
     }
 }
